@@ -2,7 +2,7 @@
 
 # Maryia Harnashevich
 
-## Junior Frontend Developer
+### Junior Frontend Developer
 
 ## Contacts:
 
@@ -84,3 +84,45 @@ function quicksort(array) {
 
 console.log(quicksort([10, 5, 2, 3]));
 ```
+
+## Education:
+
+- Bachelor, Minsk State Linguistic University, Belarus/Minsk
+  - English Faculty
+- Master, Minsk State Linguistic University, Belarus/Minsk
+  - Linguistic support of intercultural communication (english, chinese languages)
+- Courses
+  - [Udemy video lectures](https://www.udemy.com/)
+  - [CS50 lectures](https://www.youtube.com/channel/UCcabW7890RKJzL968QWEykA)
+  - [FreeCodeCamp](https://www.freecodecamp.org/)
+  - [HTML Academy](https://htmlacademy.ru/)
+- Sololearn
+  - HTML, JavaScript, Coding for Marketers, Resposive Web Design
+- Books
+  - **Grokking Algorithms** by _Aditya Bhargava_
+  - **Eloquent JavaScript** by _Marijn Haverbeke_
+  - **JavaScript for kids** by _Nick Morgan_
+- JavaScript
+  - [Learn JavaScript](https://learn.javascript.ru/)
+
+## Experience:
+
+- RedTrack
+  - Product Specialist (5 months)
+    - RedTrack is ad tracking and conversions attribution platform for media buyers. My responsibilities were to help customers consolidate data across their media buying activities and turn insights into actions through real-time notifications and campaign optimization rules based on granular data.
+- Tapston
+  - JavaScript Developer (8 months)
+    - Creating websites using React, Redux, NextJS.
+
+## Languages:
+
+- English - _C1 level of proficiency_
+- Chinese - _B2 level of proficiency_
+- Italian - _A2 level of proficiency_
+- Hebrew - _A2 level of proficiency_
+- Russian - _Native_
+
+---
+
+> “Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.”
+> ― Linus Torvalds
