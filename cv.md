@@ -4,8 +4,6 @@
 
 ## Junior Frontend Developer
 
----
-
 ## Contacts:
 
 - Location: Belarus, Minsk
@@ -13,8 +11,6 @@
 - E-mail: lightbrown9874@gmail.com
 - Github: [goldmarkol](https://github.com/goldmarkol)
 - LinkedIn: [Maria Gornashevich](https://www.linkedin.com/in/maria-gornashevich-4b8a371b8/)
-
----
 
 ## Summary about myself:
 
@@ -24,4 +20,67 @@ For my first professional contact, I was working as a Trainee JS developer and l
 
 I am completely sure that my ability to work hard and passion to learn new technologies will help in my future career as a professional Frontend Developer. That is what keeps me up at night, a never ending thirst to create beautiful, powerful things and share them with the world.
 
----
+## Skills and Proficiency:
+
+- HTML, CSS(Framework Bootstrap, Preprocessor SASS,SCS; BEM methodology, JQuery).
+- JavaScript (Fundamentals,Functional Programming, OOP, Asynchronous JavaScript, ES6+,DOM),JSON.
+- React, Redux, NextJS
+- Git, GitHub, BitBucket, Agile
+- Algorithms
+- Module Bundlers: Gulp, Webpack.
+- VS Code, Figma
+
+## Code example:
+
+### Binary search implementation
+
+```
+function binary_search(list, item) {
+  let low = 0;
+  let high = list.length - 1;
+
+  while (low <= high) {
+    let mid = Math.floor((low + high) / 2);
+
+    let guess = list[mid];
+
+    if (guess === item) {
+      return mid;
+    }
+    if (guess > item) {
+      high = mid - 1;
+    } else {
+      low = mid + 1;
+    }
+  }
+
+  return null;
+}
+
+const my_list = [1, 3, 5, 7, 9];
+
+console.log(binary_search(my_list, 3));
+console.log(binary_search(my_list, -1));
+```
+
+### Quick array sorting implementation
+
+```
+function quicksort(array) {
+  if (array.length < 2) return array;
+
+  let pivot = array[0];
+
+  let less = array.slice(1).filter(function (el) {
+    return el <= pivot;
+  });
+
+  let greater = array.slice(1).filter(function (el) {
+    return el > pivot;
+  });
+
+  return quicksort(less).concat([pivot], quicksort(greater));
+}
+
+console.log(quicksort([10, 5, 2, 3]));
+```
