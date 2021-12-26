@@ -7,3 +7,84 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  background: url(./assets/img/bg.jpeg) no-repeat 50% / cover;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px 24px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.5s;
+  padding: 0 20px;
+  line-height: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #547aff;
+  text-decoration: overline;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 24px;
+  padding: 24px;
+}
+
+.section-intro {
+  justify-content: end;
+  grid-column: 4 / 7;
+}
+
+.section {
+  grid-row: 1/2;
+}
+
+h1 {
+  font-size: 46px;
+}
+
+.intro-subtitle {
+  font-size: 32px;
+}
+
+.section-contacts {
+  grid-column: 1/3;
+}
+
+.contact-list {
+  list-style-type: none;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #ffffff;
+}
