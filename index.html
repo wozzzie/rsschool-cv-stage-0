@@ -20,7 +20,7 @@
     />
     <link
       rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/base16/railscasts.min.css"
     />
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
     <script>
@@ -43,9 +43,6 @@
             </li>
             <li class="nav-item">
               <a href="#code" class="nav-link">Code example</a>
-            </li>
-            <li class="nav-item">
-              <a href="#education" class="nav-link">Education</a>
             </li>
             <li class="nav-item">
               <a href="#experience" class="nav-link">Experience</a>
@@ -169,27 +166,139 @@
       <section class="section section-code" id="code">
         <div class="container">
           <h2 class="section-title">Code example:</h2>
-          <pre>
-            <code class="language-javascript">
-              function quicksort(array) {
-                if (array.length < 2) return array;
-              
-                let pivot = array[0];
-              
-                let less = array.slice(1).filter(function (el) {
-                  return el <= pivot;
-                });
-              
-                let greater = array.slice(1).filter(function (el) {
-                  return el > pivot;
-                });
-              
-                return quicksort(less).concat([pivot], quicksort(greater));
-              }
-              
-              console.log(quicksort([10, 5, 2, 3]));
-            </code>
-          </pre>
+          <h3 class="code-subtitle">Quick array sorting implementation</h3>
+          <div class="code-block">
+            <pre>
+              <code class="language-javascript">
+                function quicksort(array) {
+                  if (array.length < 2) return array;
+                
+                  let pivot = array[0];
+                
+                  let less = array.slice(1).filter(function (el) {
+                    return el <= pivot;
+                  });
+                
+                  let greater = array.slice(1).filter(function (el) {
+                    return el > pivot;
+                  });
+                
+                  return quicksort(less).concat([pivot], quicksort(greater));
+                }
+  
+                console.log(quicksort([10, 5, 2, 3]));
+              </code>
+            </pre>
+          </div>
+        </div>
+      </section>
+      <section class="section section-experience">
+        <div class="container">
+          <h2 class="section-title">Education:</h2>
+          <div class="experience-wrapper">
+            <div class="experience-column">
+              <h3 class="experience-subtitle">Education</h3>
+              <ul>
+                <li>
+                  <div class="experience-item">
+                    <div class="experience-head">
+                      <div class="experience-icon">
+                        <img
+                          src="./assets/icons/experience/university.svg"
+                          alt="university"
+                        />
+                      </div>
+                      <div class="experience-text">
+                        <h4 class="experience-title">
+                          Minsk State Linguistic University
+                        </h4>
+                        <div class="experience-location">
+                          Bachelor | Belarus/Minsk (2015-2020)
+                        </div>
+                      </div>
+                    </div>
+                    <div class="experience-body">English Faculty</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="experience-item">
+                    <div class="experience-head">
+                      <div class="experience-icon">
+                        <img
+                          src="./assets/icons/experience/courses.svg"
+                          alt="university"
+                        />
+                      </div>
+                      <div class="experience-text">
+                        <h4 class="title title_fz14">
+                          Minsk State Linguistic University
+                        </h4>
+                        <div class="experience-location">
+                          Master | Belarus/Minsk (2020-2021)
+                        </div>
+                      </div>
+                    </div>
+                    <div class="experience-body">
+                      Linguistic support of intercultural communication
+                      (english, chinese languages)
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="experience-column">
+              <h3 class="experience-subtitle">Work experience</h3>
+              <ul>
+                <li>
+                  <div class="experience-item">
+                    <div class="experience-head">
+                      <div class="experience-icon">
+                        <img
+                          src="./assets/icons/experience/designer.svg"
+                          alt="university"
+                        />
+                      </div>
+                      <div class="experience-text">
+                        <h4 class="title title_fz14">RedTrack</h4>
+                        <div class="experience-location">
+                          Product Specialist (5 months)
+                        </div>
+                      </div>
+                    </div>
+                    <div class="experience-body">
+                      RedTrack is ad tracking and conversions attribution
+                      platform for media buyers. My responsibilities were to
+                      help customers consolidate data across their media buying
+                      activities and turn insights into actions through
+                      real-time notifications and campaign optimization rules
+                      based on granular data.
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="experience-item">
+                    <div class="experience-head">
+                      <div class="experience-icon">
+                        <img
+                          src="./assets/icons/experience/developer.svg"
+                          alt="university"
+                        />
+                      </div>
+                      <div class="experience-text">
+                        <h4 class="title title_fz14">Tapston</h4>
+                        <div class="experience-location">
+                          JavaScript Developer (8 months)
+                        </div>
+                      </div>
+                    </div>
+                    <div class="experience-body">
+                      Creating websites using React, Redux, NextJS.
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>

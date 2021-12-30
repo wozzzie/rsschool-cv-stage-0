@@ -164,12 +164,53 @@ h1 {
   width: 100%;
 }
 
-
 pre code {
   font-size: 18px;
 }
 
 pre code.hljs {
   background: url(./assets/img/bg.jpeg) no-repeat 10% / cover;
+  border-radius: 10px;
   padding: 0;
+}
+
+.code-subtitle {
+  text-align: center;
+}
+
+.experience-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience-column > ul {
+  list-style-type: none;
+}
+
+.experience-wrapper {
+  display: grid;
+  padding: 0 65px 0 65px;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 70px;
+}
+
+.experience-head {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.experience-text {
+  margin-left: 20px;
+  line-height: 22px;
+}
+
+.experience-body {
+  margin-top: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.experience-subtitle {
+  margin-bottom: 20px;
 }
