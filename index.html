@@ -18,6 +18,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </head>
   <body>
     <header class="header">
@@ -156,6 +164,32 @@
               <img src="./assets/icons/figma.svg" alt="figma" />
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="section section-code" id="code">
+        <div class="container">
+          <h2 class="section-title">Code example:</h2>
+          <pre>
+            <code class="language-javascript">
+              function quicksort(array) {
+                if (array.length < 2) return array;
+              
+                let pivot = array[0];
+              
+                let less = array.slice(1).filter(function (el) {
+                  return el <= pivot;
+                });
+              
+                let greater = array.slice(1).filter(function (el) {
+                  return el > pivot;
+                });
+              
+                return quicksort(less).concat([pivot], quicksort(greater));
+              }
+              
+              console.log(quicksort([10, 5, 2, 3]));
+            </code>
+          </pre>
         </div>
       </section>
     </main>
