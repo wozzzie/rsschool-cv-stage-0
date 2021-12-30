@@ -137,11 +137,6 @@ h1 {
   text-align: center;
 }
 
-.skills-list {
-  list-style-type: none;
-  line-height: 23px;
-}
-
 .skills-item > img {
   height: 70px;
   width: 70px;
@@ -162,6 +157,8 @@ h1 {
   align-items: center;
   justify-items: center;
   width: 100%;
+  list-style-type: none;
+  line-height: 23px;
 }
 
 pre code {
@@ -220,4 +217,25 @@ pre code.hljs {
   color: #547aff;
   text-decoration: overline;
   cursor: pointer;
+}
+
+.languages-item > img {
+  height: 70px;
+  width: 70px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.languages-item > img:hover {
+  opacity: 0.7;
+  transform: rotate(360deg);
+}
+
+.languages-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  line-height: 23px;
 }
