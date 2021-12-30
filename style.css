@@ -213,4 +213,11 @@ pre code.hljs {
 
 .experience-subtitle {
   margin-bottom: 20px;
+  text-align: center;
+}
+
+.experience-subtitle:hover {
+  color: #547aff;
+  text-decoration: overline;
+  cursor: pointer;
 }
