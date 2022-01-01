@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: url(./assets/img/bg.jpeg) no-repeat 50% / cover;
+  background: url(./assets/img/bg.jpeg) no-repeat 70% / cover;
   font-family: "Inter", sans-serif;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
@@ -118,9 +118,9 @@ h1 {
   color: #ffffff;
 } */
 
-.divider {
+.summary-divider {
   width: 100%;
-  border-bottom: 1px solid #9554ff;
+  border-bottom: 1px solid #c6b4294c;
   margin: 20px 0;
 }
 
@@ -131,7 +131,7 @@ h1 {
 
 .summary-block {
   min-width: 90%;
-  background: url(./assets/img/bg.jpeg) no-repeat 70% / cover;
+  background: url(./assets/img/projects/blur.jpeg) no-repeat 70% / cover;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -219,6 +219,13 @@ pre code.hljs {
   cursor: pointer;
 }
 
+.languages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
 .languages-item > img {
   height: 70px;
   width: 70px;
@@ -233,9 +240,59 @@ pre code.hljs {
 }
 
 .languages-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  padding: 0 65px 0 65px;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 70px;
+  justify-items: center;
   list-style-type: none;
-  line-height: 23px;
+}
+
+.projects-block {
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-item {
+  background: url(./assets/img/projects/blur.jpeg) no-repeat 70% / cover;
+  margin-top: 20px;
+  box-shadow: 0 4px 25px rgb(0 0 0 / 25%);
+  border-radius: 10px;
+}
+
+.projects-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.projects-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.projects-descr {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.projects-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #c6b4294c;
+  margin-top: 40px;
+}
+
+.projects-link {
+  padding: 20px;
+}
+
+.projects-link > a {
+  text-decoration: none;
+  color: white;
 }
