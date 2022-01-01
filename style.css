@@ -13,6 +13,7 @@ body {
   font-family: "Inter", sans-serif;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
+  font-size: 20px;
   color: #ffffff;
   min-height: 100vh;
   margin: 0;
@@ -53,7 +54,6 @@ body {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.5s;
-  padding: 0 20px;
   line-height: 50px;
   transition: 0.3s;
   cursor: pointer;
@@ -307,4 +307,41 @@ pre code.hljs {
 .projects-link > a {
   text-decoration: none;
   color: white;
+}
+
+.footer {
+  margin-top: 120px;
+  background: url(./assets/img/bg.jpeg) no-repeat 10% / cover;
+  min-height: 82px;
+}
+
+.section-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts-item {
+}
+
+.contacts-copyright {
+  width: 100%;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  list-style-type: none;
+}
+
+.contacts-logo {
+  width: 80px;
+  height: 29px;
+}
+
+.contacts-link {
+  color: #ffffff;
+  text-decoration: none;
 }
