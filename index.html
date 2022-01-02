@@ -22,15 +22,11 @@
       rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/base16/railscasts.min.css"
     />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
-    <script>
-      hljs.highlightAll();
-    </script>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <nav class="nav">
+        <nav class="navigation">
           <ul class="nav-list">
             <li class="nav-item">
               <a href="#summary" class="nav-link">Summary</a>
@@ -54,9 +50,18 @@
               <a href="#contacts" class="nav-link">Contacts</a>
             </li>
           </ul>
+
+          <div class="hamburger">
+            <span></span>
+            <span class="long"></span>
+            <span></span>
+          </div>
         </nav>
+
+        <div class="menu-overlay"></div>
       </div>
     </header>
+
     <main class="main">
       <section class="promo">
         <div class="container">
@@ -71,6 +76,7 @@
           </div>
         </div>
       </section>
+
       <section class="section summary" id="summary">
         <div class="container">
           <h2 class="section-title">Briefly about myself:</h2>
@@ -104,6 +110,7 @@
           </div>
         </div>
       </section>
+
       <section class="section skills" id="skills">
         <div class="container">
           <h2 class="section-title">Skills and Proficiency:</h2>
@@ -453,4 +460,10 @@
       </div>
     </footer>
   </body>
+
+  <script src="./script.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
 </html>
