@@ -82,7 +82,7 @@ a:hover {
 
 .promo {
   /* min-height: 100vh; */
-  padding-top: 120px;
+  padding-top: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -412,37 +412,24 @@ pre code.hljs {
     text-align: center;
   }
 
-  .intro-subtitle {
-    font-size: 24px;
-  }
-
+  .intro-subtitle,
   .section-title {
     font-size: 24px;
   }
 
-  .text {
-    font-size: 18px;
-  }
-
-  .code-subtitle {
-    font-size: 20px;
-  }
-
+  .code-subtitle,
   .experience-subtitle {
     font-size: 20px;
   }
 
-  .experience-body {
-    font-size: 18px;
-  }
-
-  .projects-descr {
+  .experience-body,
+  .projects-descr,
+  .text {
     font-size: 18px;
   }
 
   .promo-block {
     flex-direction: column;
-    margin-top: 50px;
   }
 
   .photo {
@@ -464,6 +451,10 @@ pre code.hljs {
     text-align: center;
     gap: 12px;
   }
+
+  .promo {
+    padding-top: 150px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -479,55 +470,25 @@ pre code.hljs {
 }
 
 @media (max-width: 425px) {
-  .intro-subtitle {
-    font-size: 18px;
-  }
-
   h1 {
     font-size: 24px;
   }
 
-  .section-title {
-    font-size: 18px;
-  }
-
-  .text {
-    font-size: 16px;
-  }
-
-  .code-subtitle {
-    font-size: 16px;
-  }
-
-  .experience-subtitle {
-    font-size: 18px;
-  }
-
-  .experience-text {
-    font-size: 18px;
-  }
-
-  .experience-body {
-    font-size: 16px;
-  }
-
-  .projects-descr {
-    font-size: 16px;
-  }
-
-  .projects-subtitle {
-    font-size: 18px;
-  }
-
-  .projects-link {
-    font-size: 18px;
-  }
-
+  .text,
+  .code-subtitle,
+  .experience-body,
+  .projects-descr,
   .languages-level {
     font-size: 16px;
   }
 
-  .section-contacts {
+  .projects-link,
+  .section-contacts,
+  .projects-subtitle,
+  .experience-text,
+  .experience-subtitle,
+  .section-title,
+  .intro-subtitle {
     font-size: 18px;
   }
 }
