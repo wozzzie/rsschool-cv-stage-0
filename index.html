@@ -183,12 +183,12 @@
             <pre>
               <code class="language-javascript">
                 function quicksort(array) {
-                  if (array.length < 2) return array;
+                  if (array.length &lt; 2) return array;
                 
                   let pivot = array[0];
                 
                   let less = array.slice(1).filter(function (el) {
-                    return el <= pivot;
+                    return el &lt;= pivot;
                   });
                 
                   let greater = array.slice(1).filter(function (el) {
@@ -434,7 +434,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <section class="section-contacts" id="contacts">
+        <div class="section-contacts" id="contacts">
           <div class="contacts-copyright">© 2022 by Maryia Harnashevich</div>
           <ul class="contacts-list">
             <li>
@@ -459,14 +459,14 @@
               </a>
             </li>
           </ul>
-        </section>
+        </div>
       </div>
     </footer>
-  </body>
 
-  <script src="./script.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
-  <script>
-    hljs.highlightAll();
-  </script>
+    <script src="./script.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
 </html>
